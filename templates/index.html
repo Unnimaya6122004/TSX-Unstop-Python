@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container">
+    <div class="section" style="display: flex; flex-wrap: wrap; gap: 20px; align-items: center;">
+        <div style="flex: 1; min-width: 250px;">
+            <h1>Hi, I'm Unnimaya K</h1>
+            <p>BTech CSE student at NSS College of Engineering | GSSOC & SSOC Contributor | Student Placement Coordinator (Batch 2026)</p>
+
+            <div class="icon-text"><i class="fas fa-map-marker-alt"></i> Palakkad, Kerala</div>
+            <div class="icon-text"><i class="fas fa-envelope"></i> <a href="mailto:unnimayak612@gmail.com">unnimayak612@gmail.com</a></div>
+            <div class="icon-text"><i class="fas fa-phone"></i> 8547700569</div>
+
+            <div class="link-group">
+                <a href="https://unnimaya6122004.github.io/Unnimaya6122004/" target="_blank"><i class="fas fa-globe"></i> GitHub</a>
+                <a href="https://www.linkedin.com/in/unnimaya-k-b2190926b/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            </div>
+        </div>
+
+        <div style="flex: 1; text-align: center; min-width: 250px;">
+            <img src="{{ url_for('static', filename='profile.jpg') }}" alt="Unnimaya K" style="max-width: 250px; border-radius: 50%; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
+        </div>
+    </div>
+</div>
+{% endblock %}
